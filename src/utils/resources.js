@@ -15,3 +15,6 @@ export const SHAPE_3 = `${PATH}/shape3.png`;
 export const PHOTO_1 = `${PATH}/photo1.png`;
 export const PHOTO_2 = `${PATH}/photo2.png`;
 export const PHOTO_3 = `${PATH}/photo3.png`;
+export const FB_LOGO = `${PATH}/fb.png`;
+export const TWITTER_LOGO = `${PATH}/twitter.png`;
+export const INSTA_LOGO = `${PATH}/insta.png`;
