@@ -1,0 +1,12 @@
+@mixin d-flex($justify: null) {
+  display: flex;
+  align-items: center;
+  @if $justify {
+    justify-content: $justify;
+  }
+}
+
+@mixin widthAndHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
