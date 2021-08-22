@@ -1,0 +1,88 @@
+@import "../../sass/fonts";
+@import "../../sass/colors";
+@import "../../sass/mixins";
+
+.testimonials {
+  height: 300px;
+  margin-top: 150px;
+  position: relative;
+  border-radius: 50px;
+  margin-bottom: 200px;
+  .bg {
+    background: $purple;
+    position: absolute;
+    min-height: 75vh;
+    width: 70%;
+    inset: 0;
+    margin: auto;
+    border-radius: 50px;
+    .arrows {
+      @include widthAndHeight(140px, 30px);
+      @include d-flex(space-between);
+      position: absolute;
+      bottom: 10px;
+      right: 50px;
+      z-index: 1;
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  h3 {
+    @extend .font-roboto;
+    color: $white;
+    padding: 30px 0 0 70px;
+    font-size: 2rem;
+  }
+  > div {
+    display: flex;
+  }
+  .testimonials_inner {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    transition: transform ease-in-out 0.5s;
+  }
+  .testimonial {
+    display: flex;
+    padding: 30px 20px;
+    background-color: $white;
+    box-shadow: 1px 8px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 0.1px solid $light-purple;
+    min-height: 250px;
+    img {
+      @include widthAndHeight(90px, 90px);
+    }
+
+    > div {
+      height: 100%;
+      &:nth-child(2) {
+        width: 70%;
+        margin: auto;
+        padding-top: 10px;
+      }
+      span,
+      p {
+        @extend .font-arial;
+      }
+      span {
+        display: block;
+        &:first-child {
+          font-weight: bold;
+        }
+        &:nth-child(2) {
+          color: $purple;
+          padding: 5px 0 0px 0;
+        }
+      }
+      p {
+        text-align: justify;
+        padding: 10px 0 10px 0;
+      }
+    }
+  }
+}
