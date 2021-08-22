@@ -1,0 +1,95 @@
+@import "../../sass/mixins";
+@import "../../sass/fonts";
+@import "../../sass/colors";
+
+.features {
+  width: 65%;
+  margin: auto;
+  padding-top: 5%;
+
+  > span {
+    display: block;
+    text-align: center;
+    h3 {
+      padding: 25px 0;
+      color: $dark_blue;
+      font-size: 40px;
+      @extend .font-roboto;
+    }
+    p {
+      width: 80%;
+      margin: auto;
+      padding-bottom: 50px;
+      color: $dark_gray;
+      @extend .font-arial;
+      font-size: 15px;
+      line-height: 1.5;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    > div {
+      position: relative;
+      height: 280px;
+      .feat {
+        position: absolute;
+        z-index: 2;
+        opacity: 0.9;
+        top: 28%;
+        transform: scale(0.8);
+      }
+      .shape {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        z-index: 2;
+        opacity: 0.5;
+      }
+    }
+  }
+  .clip-path {
+    border-top-left-radius: 400px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 90%;
+    z-index: 1;
+    @include d-flex(flex-end);
+
+    > div {
+      width: 50%;
+      padding-top: 20px;
+      h3 {
+        color: $dark_blue;
+        font-family: Helvetica;
+        font-size: 24px;
+      }
+      p {
+        padding: 25px 15px 25px 0;
+        @extend .font-arial;
+        font-size: 14px;
+        line-height: 1.5;
+        color: $dark_gray;
+        text-align: justify;
+      }
+      > div {
+        @include d-flex(space-between);
+        width: 60%;
+        padding-bottom: 10px;
+        span {
+          color: $dark_blue;
+          font-family: Helvetica;
+          font-weight: bolder;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
