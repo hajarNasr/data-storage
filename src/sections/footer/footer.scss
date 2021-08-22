@@ -1,0 +1,78 @@
+@import "../../sass/colors";
+@import "../../sass/mixins";
+@import "../../sass/fonts";
+
+footer {
+  border-top: 1px solid $light_gray;
+  padding-bottom: 50px;
+  .top-section {
+    @include d-flex(space-between);
+    padding: 60px 0 60px 0;
+    > div {
+      &:first-child {
+        h3 {
+          font-size: 1.6rem;
+          color: $dark_blue;
+          @extend .font-roboto;
+        }
+        p {
+          padding-top: 10px;
+          @extend .font-arial;
+          font-size: 18px;
+        }
+      }
+      &:last-child {
+        @include d-flex(space-evenly);
+        width: 35%;
+        button {
+          &:first-child {
+            border: none;
+            border-radius: 100px;
+            background-color: $pink;
+            color: $white;
+            padding: 10px 20px;
+            box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+  .top-section,
+  > ul {
+    width: 85%;
+    margin: auto;
+  }
+  > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    > li {
+      font-family: Helvetica;
+      ul {
+        padding-top: 15px;
+      }
+      p {
+        @include d-flex;
+        color: $dark_blue;
+        @extend .font-arial;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+      &:last-child {
+        p {
+          padding-bottom: 15px;
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+      p,
+      li {
+        padding: 10px 0 10px 0;
+      }
+    }
+  }
+}
