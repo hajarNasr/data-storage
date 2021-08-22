@@ -29,20 +29,20 @@ const Features = () => (
       <Feature
         h3="24/7 Access"
         bg="rgba(156,105,226,0.1)"
-        imgSrc={FEAT_2}
+        imgSrc={FEAT_4}
         shape={1}
       />
       <Feature
         h3="Print Out"
         bg="rgba(240,99,184,0.1)"
-        imgSrc={FEAT_3}
+        imgSrc={FEAT_2}
         shape={1}
       />
       <Feature
         h3="Security Code"
         bg="rgba(45,156,219,0.1)"
-        imgSrc={FEAT_4}
         shape={2}
+        imgSrc={FEAT_3}
       />
     </div>
   </section>
