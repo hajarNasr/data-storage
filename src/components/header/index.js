@@ -1,4 +1,5 @@
-import { ARROW_RIGHT, LOGO } from "../../utils/resources";
+import { LOGO } from "../../utils/resources";
+import RequestDemoBtn from "../request_a_demo_btn";
 import "./header.scss";
 
 const Header = () => {
@@ -25,12 +26,5 @@ const HeaderMenu = () => (
 );
 
 const Logo = () => <img src={LOGO} alt="logo" />;
-
-const RequestDemoBtn = () => (
-  <button>
-    <span>Request Demo</span>
-    <img src={ARROW_RIGHT} alt="" />
-  </button>
-);
 
 export default Header;

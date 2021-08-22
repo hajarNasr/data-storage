@@ -23,14 +23,5 @@ header {
   .header_right {
     @include d-flex(flex-end);
     padding-right: 2rem;
-    button {
-      @include d-flex(space-between);
-      background-color: $white;
-      border: none;
-      width: 170px;
-      border-radius: 2rem;
-      padding: 12px 20px;
-      box-shadow: -1px 4px 1px rgb(207 200 200 / 20%);
-    }
   }
 }
