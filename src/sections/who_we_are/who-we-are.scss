@@ -1,0 +1,38 @@
+@import "../../sass/fonts.scss";
+@import "../../sass/colors";
+@import "../../sass//mixins";
+
+.who-we-are {
+  margin: auto;
+  margin-top: 20px;
+  padding: 0 150px;
+  > div {
+    @include d-flex;
+    background-color: $rose;
+    border-radius: 20px;
+    > * {
+      width: 50%;
+    }
+    .img-wrapper {
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+  .text-wrapper {
+    padding: 0 30px;
+    h2 {
+      font-size: 2rem;
+      @extend .font-roboto;
+    }
+    p {
+      padding-top: 20px;
+      padding-right: 20px;
+      @extend .font-arial;
+      font-size: 1rem;
+      line-height: 1.5;
+      font-size: 1.1rem;
+    }
+  }
+}

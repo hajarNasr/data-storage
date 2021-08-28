@@ -1,0 +1,43 @@
+@import "../../sass/fonts";
+@import "../../sass/colors";
+@import "../../sass/mixins";
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient($light-green, $white 40%);
+  position: relative;
+  .hero_text-wrapper {
+    @include d-flex;
+    @include widthAndHeight(80%, 70vh);
+    margin: auto;
+    position: absolute;
+    left: 10%;
+    z-index: 2;
+    p {
+      @extend .font-arial;
+      width: 40%;
+      padding: 20px 0;
+      font-size: large;
+      line-height: 1.5;
+    }
+    h1 {
+      font-size: 3.8rem;
+      width: 50%;
+      @extend .font-roboto;
+    }
+    button {
+      background: $purple;
+      color: $white;
+      width: 150px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 100px;
+    }
+  }
+  .hero-img {
+    position: absolute;
+    right: 3rem;
+    bottom: 0;
+    z-index: 1;
+  }
+}

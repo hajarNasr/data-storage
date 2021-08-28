@@ -1,0 +1,27 @@
+@import "../../sass/mixins";
+@import "../../sass/colors";
+@import "../../sass/fonts";
+
+header {
+  display: flex;
+  padding: 1rem;
+  padding-top: 2rem;
+  width: 75%;
+  margin: auto;
+  > * {
+    width: 50%;
+  }
+  .header_left {
+    @include d-flex(space-between);
+    ul {
+      @include d-flex(space-evenly);
+      @extend .font-arial;
+      flex: 0.75;
+      font-weight: bold;
+    }
+  }
+  .header_right {
+    @include d-flex(flex-end);
+    padding-right: 2rem;
+  }
+}
